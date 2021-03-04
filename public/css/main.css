@@ -1,22 +1,25 @@
+.body {
+  background-color: rgb(1, 2, 34) !important;
+}
+
 .navbar-toggle {
   border: solid 1px black;
 }
 
 #topjlogo {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 @font-face {
   font-family: "Korinna BT";
-    src: url('fonts/Korinna Bold BT.eot');
-    src: url('fonts/Korinna Bold BTeot?#iefix') format("embedded-opentype"),
-    url('fonts/Korinna Bold BT.woff') format("woff"),
-    url('fonts/Korinna Bold BT.ttf') format("truetype"),
-    url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
+  src: url("fonts/Korinna Bold BT.eot");
+  src: url("fonts/Korinna Bold BTeot?#iefix") format("embedded-opentype"),
+    url("fonts/Korinna Bold BT.woff") format("woff"), url("fonts/Korinna Bold BT.ttf") format("truetype"),
+    url("fonts/Korinna Bold BT.svg#Korinna BT") format("svg");
 }
 .question {
   justify-self: center;
-  width: 100%
+  width: 100%;
 }
 .panel-heading {
   display: grid;
@@ -26,23 +29,33 @@
   width: 100%;
   height: 90px;
   background-color: darkblue;
+  border-radius: 20px;
+  box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca, 0 0 20px #0ba9ca, 0 0 25px #0ba9ca;
 }
 .gridstyling {
-    display: grid;
-    grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
-    grid-auto-flow: column;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
+  grid-auto-flow: column;
+  grid-gap: 10px;
 }
-.qcategory-title, .question, .scoretally {
+.qcategory-title,
+.question,
+.scoretally {
   font-family: Korinna BT;
 }
 .container-fluid {
-  max-width: 900px
+  max-width: 900px;
 }
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Erica One", cursive;
+  font-size: 36px;
+  background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 #score1 {
   color: green;
@@ -72,12 +85,12 @@
   align-content: center;
 }
 /*.question {*/
-    /*height:100px;*/
-    /*vertical-align: middle;*/
-    /*text-align: center;*/
-    /*font-size: 1.5em;*/
-    /*padding-top: 15px;*/
-    /*cursor: pointer;*/
+/*height:100px;*/
+/*vertical-align: middle;*/
+/*text-align: center;*/
+/*font-size: 1.5em;*/
+/*padding-top: 15px;*/
+/*cursor: pointer;*/
 /*}*/
 .gametitle {
   display: flex;
@@ -97,5 +110,5 @@ h1 {
   color: red;
 }
 p {
-font-size: 20px;
+  font-size: 20px;
 }

@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jeopardy by Morgan Murrah</title>
-    <meta name="Jeopardy by Morgan Murrah" content="Web Development Questions">
-    <meta name="Morgan Murrah" content="Web Development Questions">
+    <title>Jeopardy - Vickan Edition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--   Bootstrap -->
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
     <!--   Custom CSS -->
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Erica+One&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -18,31 +18,14 @@
 
 <div>
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            About / Music Control
-        </button>
+
         <a class="navbar-brand" href="#">Jeopardy --</a>
-        <a class="navbar-brand" href="https://github.com/airbr/WDI7-Jeopardy">Github</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <!--<li><a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md">Project Specs</a></li>-->
-            <li><a href="https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah">Trello (Archive)</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <!-- Background music -->
-            <audio controls autoplay>
-                <source src="sounds/Jeopardy-theme-song.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="buzzer">
-                <source src="sounds/Wrong-answer-sound-effect.mp3" type="audio/mpeg">
-                Your browser does not support HTML5 video.
-            </audio>
-            <audio id="chaching">
-                <source src="sounds/Cash-register-sound.wav" type="audio/mpeg">
-                Your browser does not support HTML5 video.
-            </audio>
         </ul>
     </div>
 </div>
@@ -51,13 +34,16 @@
 <body>
 
 <div class="logo">
-    <img src="public/css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
+    <h1 id="topjlogo">JEOPARDY</h1><br>
+</div>
+<div class="logo">
+<h2 id="topjlogo">Vickan Edition</h2>
 </div>
 
 <div>
 
     <div id="main-board">
-        <!--MODAL HTML - Dynamically changed withquestions-->
+        <!--MODAL HTML - Dynamically changed with questions-->
         <div>
             <div class="bs-example">
                 <!-- Modal HTML -->
@@ -82,11 +68,11 @@
         </div>
 
         <div class="panel-heading">
-            <div class="qcategory-title text-center"><h5>HTML</h5></div>
-            <div class="qcategory-title text-center"><h5>CSS</h5></div>
-            <div class="qcategory-title text-center"><h5>JS</h5></div>
+            <div class="qcategory-title text-center"><h5>Jorden runt</h5></div>
+            <div class="qcategory-title text-center"><h5>Musik</h5></div>
+            <div class="qcategory-title text-center"><h5>Alkohol</h5></div>
             <div class="qcategory-title text-center"><h5>UNIX</h5></div>
-            <div class="qcategory-title text-center"><h5>BONUS</h5></div>
+            <div class="qcategory-title text-center"><h5>Viktoria Andersson</h5></div>
         </div>
 
         <div class="gridstyling" id="gridstyling">
@@ -94,27 +80,27 @@
 
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn ten" data-toggle="modal" data-target="#myModal"
-                            data-num="0">$10
+                            data-num="0">100 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fifty" data-toggle="modal" data-target="#myModal"
-                            data-num="1">$50
+                            data-num="1">200 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="2">$100
+                            data-num="2">300 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fivehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="3">$500
+                            data-num="3">400 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onethousand" data-toggle="modal" data-target="#myModal"
-                            data-num="4">$1000
+                            data-num="4">500 kr
                     </button>
                 </div>
 
@@ -122,27 +108,27 @@
 
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn ten" data-toggle="modal" data-target="#myModal"
-                            data-num="5">$10
+                            data-num="5">100 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fifty" data-toggle="modal" data-target="#myModal"
-                            data-num="6">$50
+                            data-num="6">200 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="7">$100
+                            data-num="7">300 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fivehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="8">$500
+                            data-num="8">400 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onethousand" data-toggle="modal" data-target="#myModal"
-                            data-num="9">$1000
+                            data-num="9">500 kr
                     </button>
                 </div>
 
@@ -150,27 +136,27 @@
 
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn ten" data-toggle="modal" data-target="#myModal"
-                            data-num="10">$10
+                            data-num="10">100 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fifty" data-toggle="modal" data-target="#myModal"
-                            data-num="11">$50
+                            data-num="11">200 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="12">$100
+                            data-num="12">300 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fivehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="13">$500
+                            data-num="13">400 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onethousand" data-toggle="modal" data-target="#myModal"
-                            data-num="14">$1000
+                            data-num="14">500 kr
                     </button>
                 </div>
 
@@ -178,27 +164,27 @@
 
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn ten" data-toggle="modal" data-target="#myModal"
-                            data-num="15">$10
+                            data-num="15">100 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fifty" data-toggle="modal" data-target="#myModal"
-                            data-num="16">$50
+                            data-num="16">200 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="17">$100
+                            data-num="17">300 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fivehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="18">$500
+                            data-num="18">400 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onethousand" data-toggle="modal" data-target="#myModal"
-                            data-num="19">$1000
+                            data-num="19">500 kr
                     </button>
                 </div>
 
@@ -206,27 +192,27 @@
 
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn ten" data-toggle="modal" data-target="#myModal"
-                            data-num="20">$10
+                            data-num="20">100 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fifty" data-toggle="modal" data-target="#myModal"
-                            data-num="21">$50
+                            data-num="21">200 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="22">$100
+                            data-num="22">300 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn fivehundred" data-toggle="modal" data-target="#myModal"
-                            data-num="23">$500
+                            data-num="23">400 kr
                     </button>
                 </div>
                 <div class="question">
                     <button type="button" class="btn btn-info gridbtn onethousand" data-toggle="modal" data-target="#myModal"
-                            data-num="24">$1000
+                            data-num="24">500 kr
                     </button>
                 </div>
         </div>
