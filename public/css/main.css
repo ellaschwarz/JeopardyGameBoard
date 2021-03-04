@@ -53,8 +53,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: "Erica One", cursive;
-  font-size: 36px;
+  font-size: 56px;
   background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -112,4 +113,32 @@ h4 {
 
 p {
   font-size: 20px;
+}
+
+.modal-content {
+  border-radius: 20px;
+  background-color: darkblue;
+  margin-top: 300px;
+  padding: 20px;
+}
+
+.modal-title {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #ffecb3;
+  margin-top: 30px;
+}
+
+.modal-body {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  color: #ffecb3;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
 }
