@@ -55,12 +55,17 @@
   align-items: center;
   text-align: center;
   font-family: "Erica One", cursive;
-  font-size: 56px;
+  font-size: 36px;
   background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
 }
+
+#topjlogo {
+  font-size: 56px;
+}
+
 #score1 {
   color: green;
   font-size: 30px;
