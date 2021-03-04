@@ -120,6 +120,12 @@ p {
   font-size: 20px;
 }
 
+h5 {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: #ffecb3;
+}
+
 .modal-content {
   border-radius: 20px;
   background-color: darkblue;
