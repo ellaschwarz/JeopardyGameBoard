@@ -1,191 +1,159 @@
 const questions = [
-	/* Jorden runt*/
+	/* Kategori 1*/
 	{
-		prompt: 'What is the expansion of HTML?',
-		options: [
-			'Hyper Text Markup Language',
-			'Holding Text Marker Language',
-			'Hyperlink Text Management Language',
-			'Holding Text Modal Language'
-		],
-		correctAnswer: 'Hyper Text Markup Language',
-		cashPrize: 10
-	},
-	{
-		prompt: 'What is the current version of HTML?',
-		options: ['HTMLv5000', 'HTML5', 'HTML2016', 'HTMLC'],
-		correctAnswer: 'HTML5',
-		cashPrize: 50
-	},
-	{
-		prompt: 'What language placed in a seperate file has largely replaced use of <style></style> elements?',
-		options: ['HTMLS Code', 'Style Sheet Language', 'CSS or Central Style Sheet', 'CSS or Cascading Style Sheets'],
-		correctAnswer: 'CSS or Cascading Style Sheets',
+		prompt: 'Kroppsdel Vickan bröt när hennes ingifta morbror tog med henne på en skidtur?',
+		options: ['Benet'],
+		correctAnswer: 'Benet',
 		cashPrize: 100
 	},
 	{
-		prompt: 'What new element type introduced in HTML5 is functionally the same as a Div?',
-		options: ['Semantic Tags', 'PseudoDivs', 'DivisionIDs', 'Division Notation'],
-		correctAnswer: 'Semantic Tags',
+		prompt: 'Antalet högstadier Vickan har gått på',
+		options: ['5'],
+		correctAnswer: '5',
+		cashPrize: 200
+	},
+	{
+		prompt: 'Land där Vickan gick på konfirmationsläger',
+		options: ['England'],
+		correctAnswer: 'England',
+		cashPrize: 300
+	},
+	{
+		prompt: 'Känd politikers smeknamn som Vickan fick ärva',
+		options: ['Bulten'],
+		correctAnswer: 'Bulten',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Anledning till att Vickan och Malin köpte "dagen efter"-piller utomlands',
+		options: ['Kondomen sprack'],
+		correctAnswer: 'Kondomen sprack',
 		cashPrize: 500
 	},
+	/* Kategori 2 */
 	{
-		prompt: 'Browsers do not usually allow cross-site actions but there is one major exception:',
-		options: ['Get Requests', 'Ping Commands', 'iFrames', 'Git'],
-		correctAnswer: 'iFrames',
-		cashPrize: 1000
-	},
-	/* Musik */
-	{
-		prompt: 'What is the expansion of CSS?',
-		options: ['Cascading Style Sheets', 'Central Style Server', 'Control Set Styles', 'C Safe Server'],
-		correctAnswer: 'Cascading Style Sheets',
-		cashPrize: 10
-	},
-	{
-		prompt: 'The "<Span> </Span>" has what as a default property?',
-		options: ['set-length', 'block', 'timestamp', 'inline'],
-		correctAnswer: 'inline',
-		cashPrize: 50
-	},
-	{
-		prompt: 'The * css selector applies to what?',
-		options: ['Everything', 'Wildcard elements', 'Multiplication Functions', 'Elements with the Id of *'],
-		correctAnswer: 'Everything',
+		prompt: 'Personer som var inblandade i "Klamydia -19"-pandemin',
+		options: ['Martin och Albin'],
+		correctAnswer: 'Martin och Albin',
 		cashPrize: 100
 	},
 	{
-		prompt: 'What feature recently introduced in CSS 3 addresses issues with "floats"?',
-		options: ['Center Flagpoints', 'Flexbox', 'Flexpoints', 'FloatV2.0'],
-		correctAnswer: 'Flexbox',
+		prompt: 'Namn på ex som idag är body builder',
+		options: ['Oscar Wrede'],
+		correctAnswer: 'Oscar Wrede',
+		cashPrize: 200,
+		img: '../css/images/Skärmavbild 2021-03-06 kl. 10.31.36.jpg'
+	},
+	{
+		prompt: 'Namn på kille som kan benämnas som "boy next door"',
+		options: ['Oscar Wrede'],
+		correctAnswer: 'Oscar Wrede',
+		cashPrize: 300
+	},
+	{
+		prompt: 'Ex som kallade själva sexakten för att "dekorera"',
+		options: ['Damien'],
+		correctAnswer: 'Damien',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Förnamn på haff/dejt som blivit pappa (inte Robin)',
+		options: ['Pål'],
+		correctAnswer: 'Pål',
 		cashPrize: 500
 	},
+	/* Kategori 3 */
 	{
-		prompt: 'CSS is hard. What is one feature that makes it hard compared to other languages? ',
-		options: [
-			'Lack of Case Examples',
-			'No Error Output',
-			'Inclusion of complex variable functions',
-			'Lack of documentation'
-		],
-		correctAnswer: 'No Error Output',
-		cashPrize: 1000
-	},
-	/* Alkohol */
-	{
-		prompt: 'En öl med förkortningen IPA',
-		options: ['Indian Pale Ale'],
-		correctAnswer: 'Indian Pale Ale',
-		cashPrize: 10
-	},
-	{
-		prompt: 'Javascript is usually described as a " "-based language?',
-		options: ['Relational', 'COBOL', 'Object', 'Directional'],
-		correctAnswer: 'Object',
-		cashPrize: 50
-	},
-	{
-		prompt: 'JSON is: ',
-		options: [
-			'A Javascript engine',
-			'A text format readable by Javascript',
-			'A Javascript library',
-			'A Javascript function'
-		],
-		correctAnswer: 'A text format readable by Javascript',
+		prompt: 'Namnet på TipTapps co-workingkontor',
+		options: ['Epicenter'],
+		correctAnswer: 'Epicenter',
 		cashPrize: 100
 	},
 	{
-		prompt: 'Huvudingrediensen i Cognac',
-		options: ['Drivor'],
-		correctAnswer: 'Druvor',
-		cashPrize: 500
+		prompt: 'Året då en prinsessa varit med i Paradise Hotel',
+		options: ['2005'],
+		correctAnswer: '2005',
+		cashPrize: 200
 	},
 	{
-		prompt: 'Can you change the properties on a const variable?',
-		options: ['Never', 'Yes, by default', 'Yes, only if $constprop is present', 'Yes, if in an IIFE'],
-		correctAnswer: 'Yes, by default',
-		cashPrize: 1000
+		prompt: 'Påhittat efternamn som Viktoria vill byta till',
+		options: ['Gustander'],
+		correctAnswer: 'Gustander',
+		cashPrize: 300
+	},
+	{
+		prompt: 'Förnamnet på Vickans två kollegor på Business Challenge',
+		options: ['Veronica och Camilla'],
+		correctAnswer: 'Veronica och Camilla',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Namnet på Vickans två husdjurs-startups',
+		options: ['PeppyPals och Petli '],
+		correctAnswer: 'PeppyPals och Petli ',
+		cashPrize: 500
 	},
 	/* Category 4 Questions */
 	{
-		prompt: 'The Terminal or command line is an example of a?',
-		options: ['Interconnected Network', 'Read-Eval-Print-Loop', 'C++ Library Object', 'Skynet'],
-		correctAnswer: 'Read-Eval-Print-Loop',
-		cashPrize: 10
-	},
-	{
-		prompt: 'UNIX was added relatively later into what popular propietary operating system?',
-		options: ['Windows 10', 'Linux Mint', 'Mac OS X', 'Ubuntu'],
-		correctAnswer: 'Mac OS X',
-		cashPrize: 50
-	},
-	{
-		prompt: 'The command "man x" would?',
-		options: [
-			'Bring up the task manager for x',
-			'Modularize x',
-			'Attempt to bring up the manual page for x',
-			'Make x mandatory on startup'
-		],
-		correctAnswer: 'Attempt to bring up the manual page for x',
+		prompt: 'Höger eller vänster knä som Viktoria skadade',
+		options: ['Höger'],
+		correctAnswer: 'Höger',
 		cashPrize: 100
 	},
 	{
-		prompt:
-			'Someone shady on the internet tells you to enter a "rm -rf" command into your terminal on your root directory. Doing this would:',
-		options: [
-			'Remake your filedomains',
-			'Rename your file register',
-			'Recursively rename all your files with the tag rm',
-			'Irreparably damage your file system'
-		],
-		correctAnswer: 'Irreparably damage your file system',
+		prompt: 'Viktorias skostorlek',
+		options: ['38-39'],
+		correctAnswer: '38-39 ',
+		cashPrize: 300
+	},
+	{
+		prompt: 'Längd på vätternrundan',
+		options: ['100 km'],
+		correctAnswer: '100 km ',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Orsaken till att Vickans ansikte svullnade upp i Costa Rica',
+		options: ['Insektsbett'],
+		correctAnswer: 'Insektsbett',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Kroppsdel på Viktoria som är sné',
+		options: ['Lillfingret'],
+		correctAnswer: 'Lillfingret ',
 		cashPrize: 500
 	},
+	/* Kategori 5 */
 	{
-		prompt: 'The GREP command allows a user to:',
-		options: [
-			'Quickly search files for specific items of text',
-			'Grab-Read-Evaluate-Loop',
-			'Gauge RAM event parameters',
-			'Group related events in the processor'
-		],
-		correctAnswer: 'Quickly search files for specific items of text',
-		cashPrize: 1000
-	},
-	/* Viktoria Andersson */
-	{
-		prompt:
-			'Use of "Alert" popup windows is often considered bad practice as browsers and users are hostile to pop-ups. What are the other two native Javascript popup functions?',
-		options: ['Warning, Confirm', 'Confirm, Refresh', 'Prompt, Confirm', 'Prompt, Notice'],
-		correctAnswer: 'Prompt, Confirm',
-		cashPrize: 10
-	},
-	{
-		prompt: 'The man page for Git describes it as:',
-		options: ['That stupid content tracker', 'A Content Version Tracker', 'General-Index-Tracker', 'A Revision Editor'],
-		correctAnswer: 'That stupid content tracker',
-		cashPrize: 50
-	},
-	{
-		prompt: 'What version of what coding language introduced the audio function contained in this page?',
-		options: ['ECMAScript', 'MP3ML', 'HTML5', 'WavML'],
-		correctAnswer: 'HTML5',
+		prompt: 'Var ligger LinkedIns huvudkontor?',
+		options: ['Silicon Valley'],
+		correctAnswer: 'Silicon Valley',
 		cashPrize: 100
 	},
 	{
-		prompt: 'Which of these frameworks include support for TypeScript?',
-		options: ['AngularJS', 'Angular', 'JQuery', 'Whitespace'],
-		correctAnswer: 'Angular',
-		cashPrize: 500
+		prompt: 'Person med flest följare på Instagram',
+		options: ['Christiano Ronaldo'],
+		correctAnswer: 'Christiano Ronaldo',
+		cashPrize: 200
 	},
 	{
-		prompt:
-			'What is an early computer language famous for being designed by Government and Business without much input from computer scientists?',
-		options: ['MS Office', 'Telnet', 'COBOL', 'C--'],
-		correctAnswer: 'COBOL',
-		cashPrize: 1000
+		prompt: 'År som Google grundades',
+		options: ['1998'],
+		correctAnswer: '1998',
+		cashPrize: 300
+	},
+	{
+		prompt: 'Youtuber som filmade sig själv med ett lik i Japanska skogen',
+		options: ['Logan Paul'],
+		correctAnswer: 'Logan Paul',
+		cashPrize: 400
+	},
+	{
+		prompt: 'Grundaren av TikTok',
+		options: ['Zhang Yiming'],
+		correctAnswer: 'Zhang Yiming',
+		cashPrize: 500
 	}
 ];
 

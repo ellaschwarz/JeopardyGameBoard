@@ -65,6 +65,7 @@ function getOptions(question) {
 		$label.append(opt);
 		$div.append($label);
 		$buttonDiv.append($div);
+		$('.image').css('background-image', 'url(' + question.img + ')');
 	});
 	return $buttonDiv;
 }
