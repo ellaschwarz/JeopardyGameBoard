@@ -65,7 +65,8 @@ function getOptions(question) {
 		$label.append(opt);
 		$div.append($label);
 		$buttonDiv.append($div);
-		$('.image').css('background-image', 'url(' + question.img + ')');
+		// let $imageDiv = $modal.find('.image');
+		// $imageDiv.css('background-image', 'url(' + question.img + ')');
 	});
 	return $buttonDiv;
 }
